@@ -10,7 +10,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>guru</servlet-name>
-    <url-pattern>/guru_login</url-pattern>
+    <url-pattern>/login_page</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

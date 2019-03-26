@@ -24,13 +24,19 @@ public class guru_login extends HttpServlet {
 		String password = request.getParameter("password");
 		if(username.isEmpty() || password.isEmpty() )
 		{
-			RequestDispatcher req = request.getRequestDispatcher("register_3.jsp");
+			RequestDispatcher req = request.getRequestDispatcher("index.jsp");
 			req.include(request, response);
 		}
-		else
+		else if((username.equalsIgnoreCase("MEDYO") && password.equalsIgnoreCase("SPRINT"))||
+				(username.equalsIgnoreCase("USER") && password.equalsIgnoreCase("USER")))
 		{
 			RequestDispatcher req = request.getRequestDispatcher("register_4.jsp");
 			req.forward(request, response);
+		}
+		else
+		{
+			RequestDispatcher req = request.getRequestDispatcher("index.jsp");
+			req.include(request, response);
 		}
 	}
  
