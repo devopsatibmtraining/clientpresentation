@@ -34,6 +34,9 @@ public class guru_register extends HttpServlet {
 		{
 			RequestDispatcher req = request.getRequestDispatcher("register_2.jsp");
 			req.forward(request, response);
+			request.setAttribute("getCondValue", getCondValue);
+
+
 		}
 	}
  

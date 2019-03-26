@@ -31,13 +31,14 @@ public class guru_login extends HttpServlet {
 				(username.equalsIgnoreCase("USER") && password.equalsIgnoreCase("USER")))
 		{
 			RequestDispatcher req = request.getRequestDispatcher("register_4.jsp");
-			req.forward(request, response);
 			request.setAttribute("uname",username);
+			req.forward(request, response);
 		}
 		else
 		{
 			RequestDispatcher req = request.getRequestDispatcher("index.jsp");
 			req.include(request, response);
+
 		}
 	}
  
