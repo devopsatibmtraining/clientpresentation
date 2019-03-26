@@ -54,7 +54,7 @@ public class guru_login extends HttpServlet {
 		} else {
     		isValid = false;
 		}
-    	return isvalid
+    	return isValid;
 	}
  
 }
