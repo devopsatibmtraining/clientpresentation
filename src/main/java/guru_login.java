@@ -30,6 +30,7 @@ public class guru_login extends HttpServlet {
 		}
 		else if(isUserValid(username,password))
 		{
+
 			RequestDispatcher req = request.getRequestDispatcher("register_4.jsp");
 			request.setAttribute("uname",username);
 			req.forward(request, response);
