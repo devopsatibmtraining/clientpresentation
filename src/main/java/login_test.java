@@ -1,6 +1,7 @@
 package main.java;
 
 import static org.junit.Assert.assertEquals;
+import org.junit.*;
 
 import main.java.guru_login;
 
