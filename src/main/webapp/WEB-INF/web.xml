@@ -6,7 +6,7 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>guru</servlet-name>
-    <servlet-class>guru_register</servlet-class>
+    <servlet-class>main.java.guru_register</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>guru</servlet-name>
