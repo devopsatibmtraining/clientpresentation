@@ -11,8 +11,8 @@
 	<tr><td>
 	<% /*String username = request.getParameter("username");*/
 		String username = (String)request.getAttribute("uname");%>
-		
-<b>Welcome   <% out.println(username);%>!!!! You have logged in.</b></td></tr>
+
+<b>Welcome   <%=username%>!!!! You have logged in.</b></td></tr>
 <tr></tr><tr><td></td><td></td><td><a href="index.jsp"></a></td></tr>
 </table>
 </body>
