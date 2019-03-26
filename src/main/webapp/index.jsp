@@ -55,7 +55,10 @@
     <div class="container">
         <h1>Medyo Sprint Presentation</h1>
         <p>This is a sample website </p>
-        <b><%=(String)request.getAttribute("login_stat")%></b>;
+        <%String log_result=(String)request.getAttribute("login_stat");
+            if (log_result != null) {%>
+               <b><%=log_result%></b>;
+        <%}%>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
     </div>
 </div>
