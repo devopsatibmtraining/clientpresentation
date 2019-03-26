@@ -5,7 +5,7 @@ import org.junit.*;
 
 import main.java.*;
 
-public class login_test {
+public class Test_Login {
 
     @Test
     public void test1(){
