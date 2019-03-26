@@ -45,6 +45,9 @@
                     <input type="password" name=password placeholder="Password" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-success">Sign in</button>
+                <div class="form-group">
+                    <b><%=(String)request.getAttribute("login_stat")%></b>;
+                </div>
             </form>
         </div><!--/.navbar-collapse -->
     </div>

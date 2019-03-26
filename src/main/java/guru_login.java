@@ -22,6 +22,7 @@ public class guru_login extends HttpServlet {
 		// TODO Auto-generated method stub
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
+
 		if(username.isEmpty() || password.isEmpty() )
 		{
 			RequestDispatcher req = request.getRequestDispatcher("index.jsp");
@@ -36,7 +37,9 @@ public class guru_login extends HttpServlet {
 		}
 		else
 		{
+			String login_stat = "You have entered the wrong username or password";
 			RequestDispatcher req = request.getRequestDispatcher("index.jsp");
+			request.setAttribute("login_stat",login_stat);
 			req.include(request, response);
 
 		}
