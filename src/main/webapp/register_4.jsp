@@ -10,7 +10,7 @@
 	<table style="with: 50%">
 	<tr><td>
 	<% String username = request.getParameter("username"); %>
-<b>Welcome   <% out.println("HEY")%>!!!! You have logged in.</b></td></tr>
+<b>Welcome   <% out.println(username);%>!!!! You have logged in.</b></td></tr>
 <tr></tr><tr><td></td><td></td><td><a href="index.jsp"></a></td></tr>
 </table>
 </body>
