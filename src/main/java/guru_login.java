@@ -28,8 +28,7 @@ public class guru_login extends HttpServlet {
 			RequestDispatcher req = request.getRequestDispatcher("index.jsp");
 			req.include(request, response);
 		}
-		else if((username.equalsIgnoreCase("MEDYO") && password.equalsIgnoreCase("SPRINT"))||
-				(username.equalsIgnoreCase("USER") && password.equalsIgnoreCase("USER")))
+		else if(isUserValid(username,password))
 		{
 			RequestDispatcher req = request.getRequestDispatcher("register_4.jsp");
 			request.setAttribute("uname",username);
@@ -43,6 +42,19 @@ public class guru_login extends HttpServlet {
 			req.include(request, response);
 
 		}
+	}
+
+	public boolean isUserValid(String username, String password) {
+    	boolean isValid = false;
+
+		if((username.equalsIgnoreCase("MEDYO") && password.equalsIgnoreCase("SPRINT"))||
+				(username.equalsIgnoreCase("USER") && password.equalsIgnoreCase("USER")))
+		{
+			isValid = true;
+		} else {
+    		isValid = false;
+		}
+    	return isvalid
 	}
  
 }
