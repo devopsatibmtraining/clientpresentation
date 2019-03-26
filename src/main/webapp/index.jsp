@@ -45,9 +45,6 @@
                     <input type="password" name=password placeholder="Password" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-success">Sign in</button>
-                <div class="form-group">
-                    <b><%=(String)request.getAttribute("login_stat")%></b>;
-                </div>
             </form>
         </div><!--/.navbar-collapse -->
     </div>
@@ -58,6 +55,7 @@
     <div class="container">
         <h1>Medyo Sprint Presentation</h1>
         <p>This is a sample website </p>
+        <b><%=(String)request.getAttribute("login_stat")%></b>;
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
     </div>
 </div>
