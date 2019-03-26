@@ -12,7 +12,7 @@
 	<% String username = request.getParameter("username");
 		/*String username = (String)request.getAttribute("uname");*/%>
 
-<b>Welcome   <%=username%>!!!! You have logged in.</b></td></tr>
+<H2>Welcome <%=username.toUpperCase()%>!!!! You have logged in.</H2></td></tr>
 <tr></tr><tr><td></td><td></td><td><a href="index.jsp"></a></td></tr>
 </table>
 </body>
