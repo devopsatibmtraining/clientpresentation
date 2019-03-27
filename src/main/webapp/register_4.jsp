@@ -16,7 +16,7 @@
     <tr></tr><tr><td></td><td></td><td><a href="index.jsp"></a></td></tr>
 </table>
 <h1>New Customer Registration</h1>
-<form>
+
     <table style="with: 50%">
         <tr>
             <td>First Name</td>
@@ -34,6 +34,6 @@
             <td>Contact No</td>
             <td><input type="text" name="contact" /></td>
         </tr></table>
-    <input type=submit value="Submit" /></form>
+    <input type=submit value="Submit" />
 </body>
 </html>
