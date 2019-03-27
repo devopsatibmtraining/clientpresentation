@@ -31,20 +31,9 @@
             <td><input type="text" name="address" /></td>
         </tr>
         <tr>
-            <td>Mobile Number</td>
-            <td><input type="text" name="mobile" /></td>
-        </tr>
-        <tr>
-            <td>Landline Number</td>
-            <td><input type="text" name="landline" /></td>
-        </tr>
-        <tr>
-            <td>Gender</td>
-            <td><input type="radio" name="gender" value="male"> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br></td>
-        </tr>
-
-    </table>
+            <td>Contact No</td>
+            <td><input type="text" name="contact" /></td>
+        </tr></table>
     <input type=submit value="Submit" />
 </body>
 </html>
