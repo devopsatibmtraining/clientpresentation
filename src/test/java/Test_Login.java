@@ -11,7 +11,7 @@ public class Test_Login {
     @Test
     public void test1(){
         guru_login check = new guru_login();
-        assertNotEquals("Login is invalid", true, check.isUserValid("wrong","mistake"));
+        assertEquals("Login is invalid", true, check.isUserValid("medyo","sprint"));
     }
 
     @Test
