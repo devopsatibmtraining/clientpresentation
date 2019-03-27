@@ -11,12 +11,18 @@ public class Test_Login {
     @Test
     public void test1(){
         guru_login check = new guru_login();
-        assertEquals("Login is invalid", true, check.isUserValid("medyo","sprint"));
+        assertEquals("Login should be valid", true, check.isUserValid("medyo","sprint"));
     }
 
     @Test
     public void test2(){
         guru_login check2 = new guru_login();
-        assertNotEquals("Login is invalid", true, check2.isUserValid("wrong","mistake"));
+        assertNotEquals("Login should be invalid", true, check2.isUserValid("wrong","mistake"));
+    }
+
+    @Test
+    public void test3(){
+        guru_login check = new guru_login();
+        assertEquals("Login should be valid", true, check.isUserValid("valid","valid"));
     }
 }
