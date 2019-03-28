@@ -45,8 +45,8 @@ public class guru_login extends HttpServlet {
 
 		if((username.equalsIgnoreCase("MEDYO") && password.equalsIgnoreCase("SPRINT"))||
 				(username.equalsIgnoreCase("MEDYO") && password.equalsIgnoreCase("SPRINT"))||
-				(username.equalsIgnoreCase("USER") && password.equalsIgnoreCase("USER"))/*||
-				(username.equalsIgnoreCase("VALID") && password.equalsIgnoreCase("VALID"))*/
+				(username.equalsIgnoreCase("USER") && password.equalsIgnoreCase("USER"))||
+				(username.equalsIgnoreCase("VALID") && password.equalsIgnoreCase("VALID"))
         )
 
 		{
