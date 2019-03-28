@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class guru_login
  */
-
-/** THIS FILE IS SUCCESSDFUL IN JUNUIT**/
+ 
+ /**THIS FILE IS SUCCESSDFUL IN JUNUIT**/
 public class guru_login extends HttpServlet {
  
     public guru_login() {
@@ -46,8 +46,8 @@ public class guru_login extends HttpServlet {
     	boolean isValid = false;
 
 		if((username.equalsIgnoreCase("MEDYO") && password.equalsIgnoreCase("SPRINT"))||
-				(username.equalsIgnoreCase("USER") && password.equalsIgnoreCase("USER"))||
-				(username.equalsIgnoreCase("VALID") && password.equalsIgnoreCase("VALID"))
+				(username.equalsIgnoreCase("USER") && password.equalsIgnoreCase("USER"))/*||
+				(username.equalsIgnoreCase("VALID") && password.equalsIgnoreCase("VALID"))*/
         )
 
 		{
