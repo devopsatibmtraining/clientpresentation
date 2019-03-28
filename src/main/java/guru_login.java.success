@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class guru_login
  */
 
-/** THIS FILE IS SUCCESSDFUL IN JUNUIT**/
+/** THIS FILE IS SUCCESSFUL IN JUNUIT**/
 public class guru_login extends HttpServlet {
  
     public guru_login() {
