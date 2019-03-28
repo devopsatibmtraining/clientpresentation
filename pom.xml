@@ -40,14 +40,6 @@
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-    <dependency>
-      <groupId>org.jacoco</groupId>
-      <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.2</version>
-    </dependency>
-
   </dependencies>
 
   <build>
@@ -63,10 +55,34 @@
           </includes>
         </configuration>
       </plugin>
+
+	                <!-- CODE COVERAGE -->  
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.2</version>
+                <executions>
+                    <execution>
+                        <id>jacoco-initialize</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jacoco-site</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+    </plugin>
+	    
+	    
     </plugins>
-
+    
     <finalName>WebApp</finalName>
-
 
   </build>
 </project>
