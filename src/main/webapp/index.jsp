@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">DevOps Case Study</a>
+            <a class="navbar-brand" href="#">iKonnect 2019</a>
         </div>
         <div class="navbar-collapse collapse">
             <form action="guru_login" method="post" class="navbar-form navbar-right" role="form">
