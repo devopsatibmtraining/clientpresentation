@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Medyo Sprint Corp.</title>
+    <title>Learning Management System</title>
 
 
     <!-- Custom styles for this template -->
@@ -53,7 +53,7 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
-        <h1>Medyo Online Booking</h1>
+        <h1>Learning Management System</h1>
         <h3>
         <%String log_result=(String)request.getAttribute("login_stat");
             if (log_result != null) {%>
